@@ -9,7 +9,10 @@ def print_menu():
 
 
 def decode(password):
-    pass
+    decoded = ""
+    for digit in password:
+        decoded += str((int(digit)-3)%10)
+    return decoded
 
 
 def encode(password):
